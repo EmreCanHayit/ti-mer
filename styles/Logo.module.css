@@ -1,0 +1,92 @@
+.wellcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    box-sizing: border-box;
+    margin: 1rem 0;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    z-index: 5;
+    margin: 0 -3px;
+    padding: 25px;
+    box-sizing: border-box;
+    
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+    .logo {
+        width: 250px;
+        height: 250px;
+    }
+    .blank {
+        width: 4.5em !important;
+    }
+}
+
+@media screen and (max-device-width: 799px) {
+    .logo {
+        width: 15rem;
+        height: 15rem;
+        padding: .5rem;
+    }
+    .motto {
+        display: none !important;
+    }
+}
+
+.motto {
+    display: flex;
+}
+
+.motto h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.blank {
+    width: 6em;
+    height: inherit;
+}
+
+.motto:first-of-type .message {
+    box-shadow: rgba(0, 0, 0, 0.95) 0px 15px 15px -15px;
+    margin-right: .5em;
+}
+
+.motto:first-of-type .blank {
+    background-color: #333;
+}
+
+.motto:last-of-type .message {
+    color: #eee;
+    box-shadow: rgba(255, 255, 255, 0.95) 0px 15px 15px -15px;
+    margin-left: .5em;
+}
+
+.motto:last-of-type .blank {
+    background-color: #eee;
+}
+
+.deneme {
+    width: 800px;
+    height: 800px;
+}

@@ -1,0 +1,41 @@
+.block {
+    position: absolute;
+    top: 0;
+    width: calc(100vw - (100vw - 100%));
+    min-height: 100vh;
+    z-index: -1;
+    background-image: url('../public/bg-marble-1920-dark.jpg');
+
+
+    padding-top: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+    .block {
+        padding-top: 22rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-device-width: 799px) {
+    .block {
+        padding-top: 22rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}

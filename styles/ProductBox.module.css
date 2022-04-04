@@ -1,0 +1,93 @@
+.product {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-sizing: border-box;
+
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: seashell;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 1;
+    z-index: 10;
+    padding: 0 1em;
+}
+
+/* 
+size
+    large
+    xlarge 
+*/
+
+.large {
+    width: 150px;
+    height: 100px;
+}
+
+.xlarge {
+    width: 240px;
+    height: 100px;
+}
+
+/*
+background
+    material
+        marble
+        travertine
+        granite
+        onyx
+        dolomite
+        limestone
+    theme
+        soft
+        dark
+*/
+
+.soft {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.marble {
+    background-image: url(../public/productMarble.svg);
+}
+
+.travertine {
+    background-image: url(../public/productTravertine.svg);
+}
+
+.granite {
+    background-image: url(../public/productGranite.svg);
+}
+
+.onyx {
+    background-image: url(../public/productOnyx.svg);
+}
+
+.dolomite {
+    background-image: url(../public/productDolomite.svg);
+}
+
+.limestone {
+    background-image: url(../public/productLimestone.svg);
+}
+
+@media screen and (max-device-width: 799px) {
+    .large {
+        width: 120px;
+        height: 80px;
+    }
+    
+    .xlarge {
+        width: 200px;
+        height: 80px;
+    }
+}

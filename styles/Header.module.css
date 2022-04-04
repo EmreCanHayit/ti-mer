@@ -1,0 +1,24 @@
+.wellcome {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation a {
+    margin-right: .8em;
+    font-size: 1.5em;
+    color: white;
+    line-height: 1.5em;
+}
+
+@media screen and (max-device-width: 799px) {
+    .wellcome {
+        flex-direction: column-reverse;
+    }
+}

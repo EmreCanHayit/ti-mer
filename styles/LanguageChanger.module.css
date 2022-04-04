@@ -1,0 +1,21 @@
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    min-height: 1em;
+    min-width: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.language:nth-last-of-type(1) {
+    background-image: url('../public/flag.en-EN.svg');
+}
+
+.language:nth-last-of-type(2) {
+    background-image: url('../public/flag.tr-TR.svg');
+    border: 1px solid black;
+    box-shadow: black 0 0 2px 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,108 @@
+.block {
+    width: 80%;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.head {
+    font-size: 1.5em;
+    font-weight: 700;
+    writing-mode: vertical-lr;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-right: .8em;
+    border: 2px solid;
+}
+
+.list {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+    .block {
+        width: 90%;
+    }
+    .large {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+
+.small {
+    grid-template-columns: minmax(0, 3fr);
+}
+
+.large {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.services .head,
+.sales .head {
+    color: white;
+    border-image: linear-gradient(
+        0deg, 
+        transparent 10%, 
+        white 50%, 
+        transparent 90%
+    ) 0 0 0 1;
+}
+
+.product,
+.process {
+    justify-content: flex-end;
+}
+
+.product .head,
+.process .head {
+    border-image: linear-gradient(
+        0deg, 
+        transparent 10%, 
+        black 50%, 
+        transparent 90%
+    ) 0 0 0 1;
+}
+
+@media screen and (max-device-width: 799px) {
+    .block {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .product .head,
+    .process .head {
+        color: white;
+        border-image: linear-gradient(
+            0deg, 
+            transparent 10%, 
+            white 50%, 
+            transparent 90%
+        ) 0 0 0 1;
+    }
+
+    .services .head,
+    .sales .head {
+        color: black;
+        border-image: linear-gradient(
+            0deg, 
+            transparent 10%, 
+            black 50%, 
+            transparent 90%
+        ) 0 0 0 1;
+    }
+
+}
+@media screen and (max-device-width: 500px) {
+    .large {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}

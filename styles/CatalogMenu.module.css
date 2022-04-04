@@ -1,0 +1,28 @@
+.navigation {
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    display: inline-flex;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px 10px;
+}
+
+.active {
+    color: white !important;
+    font-size: 5rem;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(
+        90deg, 
+        transparent 0%, 
+        white 50%, 
+        transparent 100%
+    ) 0 0 1 0;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}

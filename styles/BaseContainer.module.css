@@ -1,0 +1,51 @@
+.block {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - (100vw - 100%));
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.mining,
+.energy {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+}
+.mining {
+    background-image: url('../public/bg-marble-1920-soft.jpg');
+}
+
+.energy {
+    background-image: url('../public/bg-marble-1920-dark.jpg');
+    background-position: bottom;
+}
+
+@media screen and (max-device-width: 799px) {
+    .block {
+        flex-direction: column;
+    }
+
+    .mining,
+    .energy {
+        width: 100%;
+    }
+
+    .energy {
+        background-image: url('../public/bg-marble-1920-soft.jpg');
+        padding-top: 4rem;
+    }
+    
+    .mining {
+        background-image: url('../public/bg-marble-1920-dark.jpg');
+        background-position: bottom;
+    }
+
+}
